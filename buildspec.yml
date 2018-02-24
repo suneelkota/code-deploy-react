@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing nm…
+      - npm run setup
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Node.js code
+      - npm build
+  post_build:
+    commands:
+      - echo Build completed on `date`
+	  - aws s3 ls
