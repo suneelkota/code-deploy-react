@@ -13,4 +13,4 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-	  - aws s3 ls
+      - aws s3 ls
