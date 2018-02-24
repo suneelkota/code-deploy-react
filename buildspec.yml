@@ -13,4 +13,4 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 ls
+      - aws s3 cp build/index.html s3://suneel-code-deploy-bucket/index.html
