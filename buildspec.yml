@@ -13,5 +13,3 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      - aws s3 rm s3://suneel-code-deploy-bucket --recursive
-      - aws s3 cp build/index.html s3://suneel-code-deploy-bucket/index.html
